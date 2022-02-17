@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="experience_1" model="experience">
+            <field name="name">Python</field>
+        </record>
+        <record id="experience_2" model="experience">
+            <field name="name">Odoo</field>
+        </record>
+        <record id="experience_3" model="experience">
+            <field name="name">Javascript</field>
+        </record>
+
+        <record id="experience_4" model="experience">
+            <field name="name">Postgres</field>
+        </record>
+
+        <record id="experience_5" model="experience">
+            <field name="name">Git</field>
+        </record>
+
+    </data>
+</odoo>

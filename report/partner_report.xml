@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+      <report
+        id="partner_skill_report"
+        model="res.partner"
+        string="Reporte de contacto"
+        report_type="xlsx"
+        name="contact_experience.partner_report"
+        file="Reporte de contacto"
+        attachment_use="False"
+      />
+    </data>
+</odoo>

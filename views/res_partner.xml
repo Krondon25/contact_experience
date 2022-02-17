@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="res_partner_experience_form_inherit" model="ir.ui.view">
+        <field name="name">res.partner.experience</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+
+            <field name="category_id" position="after">
+                <field name="number_skills"/>
+            </field>
+            <xpath expr="//notebook//page[@name='internal_notes']" position="before">
+                <page string="Experience" name="experience">
+                    <field name="experience_ids" widget="section_and_note_one2many" mode="tree">
+                        <tree string="Experience" editable="bottom">
+                            <field name="skill_id"></field>
+                            <field name="years"></field>
+                            <field name="percent"></field>
+                            <field name="name"></field>
+                            <field name="company_id"></field>
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
